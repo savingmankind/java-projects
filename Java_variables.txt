@@ -1,0 +1,44 @@
+
+ 						Variables
+					-------------------------
+1) String ---------- string values are surrounded by double quotes ("Brother")
+2) int ------------- store integers WITHOUT decimels
+3) float ----------- floating point numbers with decimels
+4) char ------------ char values are surrounded by single quotes and they store single character ('b')
+5) boolean --------- stores either true or false
+
+
+	Declaration of variables
+  ----------------------------------
+
+Syntax :	type variable = value;
+example :  String name = "Damon";
+	   int x = 12;
+
+
+NOTE: We can add keyword Final before the type of the variable if we don't want anyone to change the value of that
+variable
+final int myNum = 12;
+and if we try to reassign any value to variable myNum, it will give error
+
+
+Declaration of other variables:
+---------------------------------
+
+int myNum = 12;
+float myFloat = 5.88f;
+char act = 'a';
+boolean friend = true;
+String myName = "Nina";
+
+
+to print more than one variable in one print statement, we use + operator
+
+System.out.println(myName + " " + myNum);
+
+
+identifiers
+------------
+
+Java variables must be defined by unique name
+These unique names are called identifiers
