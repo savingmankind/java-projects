@@ -1,0 +1,10 @@
+1)	Every line of Java must be inside a class and file name must be same as that of a class name (add .java at the end).
+2)	Java is case sensetive (so upper and lower case matters)
+3)	Every program must have a main method. This is the first method that gets executed
+4)	Each code statement must end with a semi colon;
+
+					Comments
+				-------------------------
+
+1)	Single line comments starts with 2 forward slashes //
+2)	Multi line comment starts with /* and ends with */ 
