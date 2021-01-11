@@ -1,0 +1,15 @@
+					Type Casting
+				-------------------------------------------------
+
+	When we assign a value of one data type to another. There are 2 types of casting:
+
+1)	Widening casting: (Automatic) : converting a smaller type to a larger type size
+			byte (1) ----> short (2) ----> char (2) -----> int (4) ----> long (8) ----> float (4) ----> double (8)
+
+			int myInt = 9;
+			double myDouble = myInt;
+
+2)	Narrowing casting (manually) : converting larger type to smaller type
+			
+			double myDouble = 9.43;
+			int myInt = (int) myDouble;
