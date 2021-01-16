@@ -1,0 +1,21 @@
+				Java Operators
+			-------------------------------------------------------
+
+1)	Arithmetic operators
+2)	Assignment 
+3)	Comparison
+4)	logical
+5)	bitwise
+
+	&& -----> Logical AND    -     Retruns true if boh statements are true
+	||    -----> Logical OR	     -     Returns true if one of the statements are true
+	!     -----> Logical NOT    -      Reverse the result (return false if result is true and vice versa)
+
+
+	Bit Wise operator
+------------------------------------------------------
+&   --------     AND -------- set each bit to 1 if both bits are 1
+|     -------      OR    --------   set each bit to 1 if any of the 2 bits is 1
+~    --------     NOT  --------   inverts all bits
+^     --------     XOR  --------  set each bit to 1 if only one if the bits is 1
+
