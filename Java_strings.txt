@@ -1,0 +1,21 @@
+			Strings
+		---------------------------------------
+
+Collection of characters surrounded by double quotes
+String greeting = "Hello";
+
+String length
+-------------------
+
+System.out.println("The length of the string is " + greeting.length());	// prints out string length
+
+System.out.println( greeting.toUpperCase() ); 			// output : HELLO
+
+System.out.println( greeting.toLowerCase() );			// output : hello
+
+Finding a character in a string
+----------------------------------------
+
+String txt = "Please locate where 'locate' occurs";
+System.out.println( txt.indexOf("locate") );				// output : 7     // always in double quote
+
