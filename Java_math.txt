@@ -1,0 +1,9 @@
+					Java Math
+				--------------------------------------------------
+
+
+System.out.println(Math.max(10, 3));		// returns the maximum value between the 2
+System.out.println(Math.min(10, 3));		// return the minimum value between the 2
+System.out.println(Math.sqrt(24));		// returns the squareroot
+System.out.println(Math.abs(12.6));		// returns the absolute positive value 
+System.out.println(Math.random());		// generates random number between 0.0(inclusive) and 1.0(exclusive)
