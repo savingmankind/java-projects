@@ -19,3 +19,48 @@ Finding a character in a string
 String txt = "Please locate where 'locate' occurs";
 System.out.println( txt.indexOf("locate") );				// output : 7     // always in double quote
 
+
+
+String concatination
+---------------------------------------
+
+combining strings using '+' operator
+String firstName = "Damon";
+String lastName = "Salvatore";
+System.out.println(firstName+" "+lastName);
+
+OR 
+
+use concat() method to combine 2 strings
+System.out.println(firstName.concat(lastName));
+
+
+Special Characters
+---------------------------------------------
+
+\'	'	single quote
+\"	"	double quote
+\\	\	backslash
+
+String txt = " We the \"North\" ";
+
+\n 	new line
+\r	carriage return
+\t	tab
+\b	backspace
+\f	form feed
+
+Adding numbers and Strings
+---------------------------------------------
+
+Java uses '+' for both adding numbers and strings
+Numbers are added and strings are concatenated.
+if you add a number and string then result string concatination
+
+String x = "10";
+int y = 20;
+System.out.println(x+y);		// Output will be 1020
+
+
+
+
