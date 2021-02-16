@@ -1,0 +1,10 @@
+				Java Switch
+			------------------------------------------------
+
+switch expression is evaluated once
+value of expression is compared to the value of each case
+if match, the associated block is executed
+BREAK and DEFAULT keywords are optional
+
+Break keyword breaks out the switch block
+default keyword is for when no match is found
