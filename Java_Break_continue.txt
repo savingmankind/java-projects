@@ -1,0 +1,7 @@
+					Break/Continue
+				------------------------------------------------------------
+
+Break statement is used to jump out of the switch block
+it can also be used to jump out of a loop
+
+Break will break you out of original loop
