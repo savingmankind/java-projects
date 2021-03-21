@@ -1,0 +1,17 @@
+					For Loop
+				------------------------------------------------
+
+For loop is used when you know exactly how many times you want to run the code block.
+
+for(stm 1 ; stm2 ; stm3) {
+
+	// code block
+}
+
+
+ stm3 executes after the code block has run (when stm2 is true)
+
+					Looping through an array
+				---------------------------------------------------------------
+
+for-each is used to loop through elements of an array
