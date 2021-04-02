@@ -1,0 +1,23 @@
+					Method Overloading
+				----------------------------------------------------------
+
+in this you can have the multiple methods with the same name as long as you have number and/or type of parameters are different
+int myMethod(int x)
+float myMethod(float x)
+double myMethod(double x, double y)
+
+Note : return type of the overloading methods may (or may not) be same but parameters should be different
+
+	static String myMethod(String lname) {
+		return "Chris "+lname;
+	}
+	
+	static String myMethod(int age) {
+		return " is "+age+" years old";
+	}
+
+	public static void main(String[] args) {
+		String name = myMethod("Evans");
+		String age = myMethod(30);
+		System.out.println(name+age);
+}
