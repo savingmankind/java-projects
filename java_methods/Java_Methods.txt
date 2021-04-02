@@ -1,0 +1,26 @@
+					Methods
+				-------------------------------------------
+A method is a block of codes that only runs when it is called . You can pass (parameters) into a method
+We use methods to reuse code
+Methods are defined / declared inside the class
+
+public class Main {
+
+static void myMethod () 
+	{
+	// code block
+	}
+}
+
+
+static -  means that method belongs to the main class, not the object of the main class
+void - means that this method does not have any return value
+
+					Calling a method
+				-----------------------------------------------------
+A method can be called multiple times
+
+public static void main(String[] args) {
+	myMethod();
+	myMethod();
+}
