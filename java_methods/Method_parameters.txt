@@ -1,0 +1,60 @@
+					Method Parameters
+				---------------------------------------------------------
+Parameters act as variables inside the methods
+we can pass as many parameters as we want
+but separate them with comma
+
+static void myMethod(String lname) {
+	System.out.println("Chris" + lname);
+}
+
+public static void main(String[] args) {
+	myMethod("Evans");
+}
+
+					Multi parameters
+				----------------------------------------------------------
+
+static void myMethod (String lname, int age) {
+	System.out.println ("Chris " + lname + " : Age " + age);
+}
+
+public static void main (String[] args) {
+	myMethod("Evans",30);
+}
+
+					Return value
+				----------------------------------------------------------
+with void keyword we don't have to return any value in the method
+but if we want to return a value from a method 
+we can use primitive data types instead of void
+and use return keyword inside the method
+
+public class Main {
+
+	static int myAge(int age) {
+		return age+5;
+	}
+
+	static int myAges(int x, int y) {
+		return x+y;
+	}
+
+	public static void main(String[] args){
+		int out = myAge(23);
+		System.out.println(out);
+		System.out.println(myAges(x+y));
+	}
+}
+
+						if-else in a method
+					------------------------------------------------------------------
+
+static void checkAge(int age) {
+		if (age >= 18) {
+			System.out.println("Access granted");
+		}else {
+			System.out.println("Access denied: you are not old enough");
+		}
+	}
+
