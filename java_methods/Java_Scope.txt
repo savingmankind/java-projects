@@ -1,0 +1,42 @@
+					Scope
+				---------------------------------------
+In Java variables are only accessible inside the region they are created. This is called the scope
+
+					Method Scope
+				-------------------------------------------
+
+Variables declared directly inside the method are available anywhere inside the method following the line of the code in which 
+that variable was declared
+
+public static void main(String[] args) {
+
+	// code here cannot access the variable x
+
+	int x = 24;
+
+	// code here can access the variable x
+	
+	System.out.println(x);
+}
+
+					Block Access
+				---------------------------------------------------
+block of code refers to the code between curly braces {}
+a variable declared inside the block of code can only be accessed by the code 
+inside that block following the line where that variable was declared
+
+public static void main (String[] args) {
+
+	// code here cannot access variable x
+
+		{ // block starts
+
+			// code here cannot access the variable x
+
+			int x = 24;
+			
+			// code here can access the variable x
+		} // block ends
+
+	// code here cannot access the variable x
+			}
