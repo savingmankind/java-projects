@@ -1,0 +1,48 @@
+					Attibutes
+				------------------------------------------
+The variables of class are actullay the class attributes which we can access by creating objects of the class
+
+public class Main {
+
+	int x = 10;
+	int y=8;
+	String name = "john";
+
+	public static void main(String[] args) {
+		Main obj1 = new Main();
+		Main obj2 = new Main();
+		System.out.println(obj1.x , obj2.name);
+  	}
+}
+
+					Modify attributes
+				-----------------------------------------------
+
+we can modify attributes by using objects itself. We can also override the existing value using the object
+	obj1.x = 12;
+
+	System.out.println(obj1.x);
+
+
+NOTE: If we don't want anyone to overirde the value of an attribute then declare that attribute as final
+	final int x = 10;
+
+
+					multiple objects
+				----------------------------------------------
+
+When we modify attributes value using one object 
+the value of that attribute for the other object remains unchanged
+
+public class Main {
+
+	int x = 10;
+
+	public static void main(String[] args) {
+		Main obj1 = new Main();
+		Main obj2 = new Main();
+		obj1.x = 14;
+		System.out.println(obj1.x);	// will output 14
+		System.out.println(obj2.x);	// will output 10
+	}
+}
