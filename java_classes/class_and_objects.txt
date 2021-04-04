@@ -1,0 +1,43 @@
+					class/objects
+				------------------------------------------------
+example: Car
+ A class has attributes (variables) like weight and color
+and methods like drive, brake
+class name should start with an uppercase and java file name should be same as class name
+
+public class Car{
+	double weight = 100;
+	String color = "Whilte";
+}
+
+			
+	Creating an Object
+------------------------------------------------------
+
+public static void main(String[] args) {
+	Car myCar1 = new Car();
+	Car myCar2 = new Car();
+}
+
+now this object can access all the attributes of class Car
+	myCar.weight
+	myCar.color
+
+
+					Using multiple classes
+				------------------------------------------------------------------
+
+we can also create an object of a class and access it in another class 
+for better organization of classes
+one class will have all the attributes (parameters) and methods and other contains the main method
+
+public class Main {
+	int x =5;
+}
+
+class Second {
+Main myObj = new Main();
+System.out.println(myObj.x);
+}
+
+NOTE : first class is declared public to access its attributes (parameters) in second
