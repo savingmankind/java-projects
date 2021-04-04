@@ -1,0 +1,25 @@
+					Methods
+				-----------------------------------------
+Methods are declared within a class and are used to perform certain actions.
+Methods are called using two parenthesis followed by a semi colon.
+
+public class Main {
+	
+	static void myMethod() {
+		System.out.println("Hello World");
+	}
+
+	public static void main (String[] args) {
+		myMethod();
+	}		
+}
+
+					Static Vs non-static methods
+				-----------------------------------------------------------------
+
+
+Static methdos can be called without creating the objects for the class 
+wheras
+Non-static or public methods can only be called by using objects
+Methods without any keyword (static or public) are considered as non-static
+
