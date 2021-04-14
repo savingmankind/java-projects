@@ -1,0 +1,26 @@
+					Packages and API's
+				----------------------------------------------------------
+
+Build in packages
+user defined packages
+
+					Build in packages
+					-------------------------
+java API is the library of prewritten classes that are free to use
+you can import them in the code that you are using
+
+// importing Scanner class
+import java.util.Scanner;
+
+public Class Person {
+
+	public static void main(String[] args) {
+		// creating an object of Scanner class
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter Username");
+		
+		// nextLine method in Scanner class is used to get the String in the next line
+		String userName = obj.nextLine();
+		System.out.println("Username is :" + userName);
+	}
+}
