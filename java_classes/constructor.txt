@@ -1,0 +1,40 @@
+				Constructor
+			-----------------------------------------------
+
+Constructor is a special method that is use to initialize the objects (or to set initial values for object attributes)
+it is called when an object is created
+Constructor name should match the class name
+Also constructor cannot have a return type
+
+public class Main {
+	int x;
+
+	public Main() {
+		x = 10;
+	}
+	
+	public static void main(String[] args) {
+		Main obj1 = new Main();
+		}
+}
+
+All classes have constructor by default and even if we don't create a constructor, Java creates one for us
+
+				Constructor with parameters
+			------------------------------------------------------------------
+
+public class Main {
+
+	int x;
+	String y;
+
+	public Main(int age, String name) {
+		x= age;
+		y = name;
+	}
+
+	public static void main(String[] args) {
+		Main obj1 =new Main(14, "Cruze);
+		System.out.println(obj1.x + " " + obj1.y);
+	}
+}
