@@ -1,0 +1,7 @@
+					Modifiers for classes
+				---------------------------------------------------------
+
+Public :  class is accessible by any other class
+default : class is onyl accessible by the classes in the same package
+final : class cannot be inherited by any other classes
+abstract :  class cannot be used to create objects but to access an abstract class it must be inherited from another class
