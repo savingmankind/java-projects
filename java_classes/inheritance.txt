@@ -1,0 +1,8 @@
+					Inheritance
+				-----------------------------------------------
+Inheriting methods and attributes from one class to another.
+we group inheritance into 2 categories:
+	subclass (child) - the class that inherits from another class
+	superclass (parent) - the class being inherited from
+
+to inherit from a class use extend keyword
