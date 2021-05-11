@@ -1,0 +1,37 @@
+					Polymorphism
+				-----------------------------------------------------
+It means many forms and it occurs when we have many classes related to each other by inheritance
+inheritance let us inherit attributes and methods of different classes
+and polymorphism uses those methods to perform different tasks
+
+// Example of polymorphism
+
+class Animal {
+	public void animalSound() {
+		System.out.println("The animal makes a sound");
+	}
+}
+
+class Dog extends Animal {
+	public void animalSound() {
+		System.out.println("Dog Whoofs");
+	}
+}
+
+class Cat extends Animal{
+	public void animalSound() {
+		System.out.println("Cat Meows");
+	}
+}
+
+public class Poly {
+	public static void main(String[] args) {
+		Animal am = new Animal();
+		Animal myDog = new Dog();
+		Animal myCat = new Cat();
+		am.animalSound();
+		myDog.animalSound();
+		myCat.animalSound();
+	}
+}
+
