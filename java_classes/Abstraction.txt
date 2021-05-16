@@ -1,0 +1,10 @@
+					Abstraction
+				-----------------------------------------------------
+
+hiding certain details and showing only esssential details to users
+achieved by abstract classes and interfaces
+
+Abstract classs :    is a restricted class that cannot be used to create objects ( to access it, it must be ingerited from another class)
+
+abstract method : can oply be used in abstract class , doesn't have a body (body provided by the subclass - inherited from)
+		abstract method can only be defied in abstarct class
