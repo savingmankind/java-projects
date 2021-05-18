@@ -1,0 +1,30 @@
+						Interfaces
+					--------------------------------------------
+
+An interface is a "complete abstract" class that is used to group related method together with empty bodies
+
+we just don't write abstract keyword in front of methods when we use interface
+
+
+interface Animal {
+
+	public void animalSound();
+	public void run();
+
+}
+
+to access the interface methods, the interface class must be implemented (like inherited) by another class with "implements" keyword
+(instead of extends)
+
+an interface cannot contain constructor as it cannot be used to create objects
+on implementation of interface, we override all the methods
+interface methods are by deafult abstract and public
+
+						Why use interface
+					-----------------------------------------------------
+to achieve security and hode certain details and only show important details
+
+IMPORTANT
+
+	Java does not support "multiple inheritance" ( a class can only inherit one superclass)
+	but is can be achieved with interfaces, because the class can implement multiple interfaces.
