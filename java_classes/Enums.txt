@@ -1,0 +1,61 @@
+					Java Enums
+				---------------------------------------------
+Enum decalaration can be done inside class , outside class but not inside a method
+
+
+a special class that represents a group of constants (inchangeable variables like final variables)
+
+to create an enum, use "enum" keyword (instead of class or interface) and separate the constants with a comma. They should be in uppercase
+
+enum Level {
+LOW,
+MEDIUM,
+HIGH 
+}
+
+
+					INternally what happens in enum
+				----------------------------------------------------------------
+
+class Level {
+
+	public static final Level LOW = new Level ();
+	public static final Level MEDIUM = new Level();
+	public static final Level HIGH = new Level();
+}
+
+
+every enum represents an object of type enum
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+accessing the enum constants with the dot syntax
+
+Level myVar = Level.MEDIUM;
+
+
+Enum is short for "enumerations" means specifically listed
+
+Enum is also mostly used in switch statements
+
+We can loop through enum, 
+enum type has a values() method which return an array of enum constants. This method is useful when you want to loop through the costants
+of an enum
+
+
+for (Level myvar : Level.values()) {
+	System.out.println(myvar);
+}
+
+
+					Difference b/w enum and class
+			----------------------------------------------------------------------------------------------------
+
+just like a class, eum can have attributes and method.
+only difference is that enum constants are public, static and final (unchangable - cannot be overidden)
+
+an enum cannot be used to create objects and it cannot extend other classes (but can implement interfaces)
+
+		when to use enum	
+-------------------------------------------------------------------------------
+ when we know that values are not going to change like days of month, colors, deck of cards etc.
