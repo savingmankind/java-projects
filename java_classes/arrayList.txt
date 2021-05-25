@@ -1,0 +1,62 @@
+					ArrayList
+				------------------------------------------
+
+This class is a resizable array found in java.util package
+
+In simple array, its size cannot be modified but in arrayList you can add/delete the elements in arrayList
+
+import java.util.ArrayList;		// import ArrayList class
+
+ArrayList<String> cars = new ArrayList<String>(); 	// create arrayList object
+
+add items
+---------------------------------
+
+to add elements use add() method
+
+cars.add("volvo");
+
+accessing an element in arrayList
+-------------------------------------------------
+use get() method and refer to the index number
+
+cars.get(0);
+
+
+changing an element
+-----------------------------------
+use set method and refer to index
+cars.set(0, "bmw");
+
+
+
+remove an element
+--------------------------------------
+use remove() method and refer to the index
+cars.remove(0);
+
+NOTE: To remeove all elements in the array use clear() method.
+
+
+list size
+-------------------------------
+use size() method
+
+cars.size();
+
+
+other kinds of array List
+--------------------------------------
+
+<Integer> <Boolean> <Character> etc.
+
+
+Sort in arrayList
+-----------------------------------
+using collection class and using method sort() in this class
+
+import java.util.Collections;
+Collections.sort(cars);
+
+this can be used to sort any type of array List
+		
