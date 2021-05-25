@@ -1,0 +1,32 @@
+					Linked List
+				-------------------------------------------------
+
+Almost same as arrayList
+Linked list is a collection which contains many objects of the same type just like array list
+has all of the same methods as arraylist 
+
+How array list works
+----------------------------
+array list class has array inside it. when an element is added, it is placed into an array. if array is not big enough, a new larger array
+is created to replace the old one and old one is removed.
+
+how linked list works
+----------------------------
+linked list stores items in containers. The list has link to first container and each container has link to next conatiner. To add an element 
+to the list , the element to the list, the element is placed into a new container and that container is linked to one of the other conatiners
+in the list.
+
+
+When to use arrayList and linked list
+------------------------------------------------------
+Array list
+--------------->>>> when you want to access random elements
+		and you only need to add or remove eleements at the end of the list
+
+liked list
+-------------->>>>>when you want to use the list by looping through it
+		and you want to add/remove multiple elements in begining, middle and end of the list
+
+linked list method
+-------------------------
+addFirst() addLast() removeFirst() removeLast() getFirst() getLast()
