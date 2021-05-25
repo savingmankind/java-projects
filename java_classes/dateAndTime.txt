@@ -1,0 +1,23 @@
+					Java Date and time
+				-----------------------------------------------------------
+
+Java does not have a built in date class, but we can import java.time package to work with date and time
+
+Display current date 
+-------------------------------
+
+import java.time.LocalDate;
+
+public class Main {
+
+	public static void main(String[] arg) {
+		LocalDate obj1 = LocalDate.now(); // create a date object
+		System.out.println(obj1);	// display current date
+	}
+}
+
+
+					Formatting date and time
+				------------------------------------------------------------------
+
+we can format date and time using DateTimeFormatter class with ofPattern() method
