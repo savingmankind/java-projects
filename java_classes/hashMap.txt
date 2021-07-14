@@ -1,0 +1,48 @@
+					HashMap
+				-------------------------------------------
+in array list the items are stored as an ordered collection and we access them with an index number.
+but in a hash map , we store items in key/value pairs and we can access them by an index of another 
+type (like string)
+
+one object is used as key (index) to another object (value), it can store different or same type
+
+eg : 
+HashMap (capitalCities) that will store String keys and String values
+
+import java.util.HashMap;
+HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+First String in <String, -------> represents type of keys
+second String in < --------------, String> represents type of values
+
+we can also write 
+HashMap< String, Integer> capCity = new HashMap<String, Integer>();
+
+First String in <String, -------> represents type of keys
+second Integer in < --------------, Integer> represents type of values
+
+add items
+----------------
+use put() method to add items
+capitalCities.put("England","London");
+
+
+accessing elements
+--------------------------------
+capitalCities.get("England");
+
+Removing an item
+-----------------------------------
+capitalCities.remove("USA");
+to remove all the items use clear()
+capitalCities.clear();
+
+Hash map size
+-----------------------
+capitalCities.size();
+
+ Looping through hash map
+-----------------------------------------
+we use keySet() when we need only keys and values() when we need only values
+capitalCities.keySet()
+capitalCities.values()
