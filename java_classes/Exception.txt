@@ -1,0 +1,32 @@
+				Exceptions
+			-------------------------------------------
+
+When executing java code, different errors can occur. coding errors by programmers, error due to wrong input etc.
+this means java has thrown an exception (thrown an error)
+
+try and catch
+--------------------
+
+try stm allows us to define a block of code to be tested for errors while it is being executed.
+catch allows us to define a block of code to be executed if an error occurs in try block.
+
+try {
+ // code
+}
+catch(Exception e) {
+// code
+}
+
+
+finally
+-----------------
+finally will let you execute the code after try catch block regardless of the result
+
+throw
+---------------------
+this keyword allows you to create a custom error 
+is used together with exception type
+ArithmeticException
+FileNotFoundExeception
+ArrayIndexOutOfBoundsExeception
+SecurityException
