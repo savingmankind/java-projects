@@ -1,0 +1,45 @@
+				iterator
+			--------------------------------------
+
+is an object used to loop through collections like arraylist and hashset.
+import from java.util package
+
+getting an iterator
+-------------------------
+Iterator<String> it = cars.iterator();
+
+
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<String> cars = new ArrayList<String>();
+
+		cars.add("Mazda");
+		cars.add("Cruze");
+		cars.add("BMW");
+		cars.add("Honda");
+
+		Iterator<String> it = cars.iterator();
+
+		System.out.println(it.next());
+
+	}
+}
+
+
+Loop through a collection using hasNext() and next() methods of Iterator
+----------------------------------
+
+//looping through a collection
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+
+
+Removing elements from a collection
+-----------------------------------------------------
+the remove() method can remove items from a collection
