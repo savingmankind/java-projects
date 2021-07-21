@@ -1,0 +1,64 @@
+					Threads
+				--------------------------------------
+
+Threads allow a program to operate more effeciently by doing multiple things at a time
+can be used to do complicated tasks in the background without interrupting the main program.
+
+Creating a thread
+---------------------------
+extending a thread class and overriding its run() method.
+or by implimenting Runnable interface.
+
+public class Main extends Thread {
+
+	public void run() {
+		System.out.println("This code is running in a thread");
+	}
+}
+
+public class Main implements Runnable {
+	public void run() {
+		System.out.println("This code is running in a thread");
+	}
+}
+
+Running thread
+---------------------------
+
+if class extends thread class, the thread can be run by creating an instance of the class and call its start() method.
+
+public class Main extends Thread {
+
+	public static void main(String[] args) {
+
+		Main Thread = new Main() ; 
+		thread.start();
+		System.out.println("This code is outside of the thread");
+	}
+
+	public void run() { 
+		System.out.println("This code is running in a thread");
+	}
+}
+
+
+public class ExThread implements Runnable {
+	public static void main(String[] args) {
+		ExThread mm = new ExThread();
+		Thread thread = new Thread(mm);
+		thread.start();
+		System.out.println("this code outside the thread");
+	}
+	
+	public void run() {
+		System.out.println("This code is inside a thread");
+	}
+}
+
+
+Main difference between extending and implementing is that when we extends a thread class, we cannot extend any other class
+but when we implements runnable interface, we can still extend other class as well
+
+because threads and main program are running at the same time, there is no way of knowing the order of implimentaion,
+so when threads and main program are reading and writing the same variables, the final value of the variables are unpredictable.
+the problem that results from this are called concurrency problems.
