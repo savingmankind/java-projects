@@ -1,0 +1,39 @@
+					Regular expressions
+				-------------------------------------------------------
+
+sequence of characters that forms a search pattern.
+java doesn't have a built in package for regular expression but we can import java.util.regex to work with regular expressions.
+package includes following classes :
+
+Pattern	-	defines a pattern (to be used in a search)
+Matcher	-	used to search for pattern
+PatternSyntaxException  - indicates syntax error in a regular expression pattern
+
+		// pattern is created using Pattern.compile
+		Pattern pattern = Pattern.compile("w3school", Pattern.CASE_INSENSITIVE);
+		// Matcher is used to search for a pattern in a string
+		Matcher matcher = pattern.matcher("Visit W3School");
+		// find method return true/false
+		boolean matchFound = matcher.find();
+		if(matchFound) { 
+			System.out.println("Match Found");
+		}else {
+			System.out.println("Match not Found");
+		}
+
+
+flags in compile()
+------------------------------
+
+Pattern.CASE_INSENSITIVE : case of letter will be ignored
+Pattern.LITERAL : Special character in a patttern will not have any special meaning
+Pattern.UNICODE_CASE : use it together with CASE_INSENSITIVE flag to also ignore the case of letters outside of english alphabet.
+
+Regular expression pattern
+------------------------------------------
+
+the first parameter of the Pattern.compile() method is the pattern. it described what is being searched for.
+Brackets are used to find a range of characters.
+[abc]    :    find one character from the options between the brackets
+[^abc]   :    find one character not between the brackets
+[0-9]      :    find one character from range 0 to 9
