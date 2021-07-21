@@ -1,0 +1,43 @@
+					Read Files
+				---------------------------------------------
+
+We use Scanner class to read contents of the text file we created
+
+there are many available classses in java available to read and write in file
+like FileReader, BufferedReader, Files, Scanner, FileInputStream, FileWriter, BufferedWriter.
+which one to use depends on the java version you are working with and weather you need to read bytes or characters and size of file/lines etc.
+
+public class ReadFile {
+	
+	public static void main(String[] args) {
+		try {
+			File ff = new File("testFile.txt");
+			Scanner sc = new Scanner(ff);
+			while(sc.hasNextLine()) {
+				String st = sc.nextLine();
+				System.out.println(st);
+			}
+			sc.close();
+		}
+		catch (FileNotFoundException e) {
+			System.out.println("An error occured");
+			e.printStackTrace();
+		}
+	}
+	
+}
+
+						getting file information
+				----	-----------------------------------------------------------
+
+// getting file info
+		File objj = new File("testFile.txt");
+		if (objj.exists()) {
+			System.out.println("File name : "+ objj.getName());
+			System.out.println("Absolute Path : "+ objj.getAbsolutePath());
+			System.out.println("Writable : "+ objj.canWrite());
+			System.out.println("Readable : "+ objj.canRead());
+			System.out.println("File Size in bytes : " + objj.length());
+		}else {
+			System.out.println("File doesn't exist");
+		}
