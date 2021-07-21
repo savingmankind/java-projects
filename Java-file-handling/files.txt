@@ -1,0 +1,59 @@
+					File handling
+				-------------------------------------------------
+
+File class from java.io package allows us to work with files
+
+create object of class and specify the file name
+
+import java.io.File;
+File myfile = new File("filename.txt");
+
+
+import java.io.File;
+import java.io.IOException;
+
+public class CreateFile {
+
+	public static void main(String[] args) {
+		File myFile = new File("fileName.txt");
+		try {
+			if(myFile.createNewFile()) {
+				System.out.println("File successfully created : " + myFile.getName());
+			}
+			else {
+				System.out.println("File already exsist");
+			}
+		}
+		catch (IOException e) {
+			System.out.println("error occured");
+		}
+	}
+}
+
+
+To create a file in a directory(requires permisssion) specify the path and use double backslashes to escape the "\" character.
+
+File myFile = new File("C:\\Users\\MyName\\filename.txt");
+
+
+				Writing to a file
+			--------------------------------------------------
+we are using FileWriter class with its method write() to write inside a file. We should the close the file with close() method after we 
+are done writing in a file.
+
+
+public class CreateFile {
+	public static void main(String[] args) {
+		
+		try {
+			FileWriter myWriteFile = new FileWriter("testFile.txt");
+			myWriteFile.write("This is a test message, Houston we are successful in finding the alien civilization");
+			myWriteFile.close();
+			System.out.println("File successfully wriiten on");
+		}
+		catch (IOException e) {
+			System.out.println("Error occured");
+			e.printStackTrace();
+		}
+	}
+}
