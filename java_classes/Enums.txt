@@ -47,6 +47,8 @@ for (Level myvar : Level.values()) {
 	System.out.println(myvar);
 }
 
+Level.valueOf("MEDIUM").ordinal()     OR     Level.MEDIUM.ordinal()       gives the index of the item, in this case : 1
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 					Difference b/w enum and class
 			----------------------------------------------------------------------------------------------------
