@@ -1,0 +1,12 @@
+package java_projects;
+
+public class DemoClass implements FirstInterface, SecondInterface{
+
+	public void myMethod() {
+		System.out.println("First method of first interface");
+	}
+	
+	public void myOtherMethod() {
+		System.out.println("Second method of second interface");
+	}
+}
