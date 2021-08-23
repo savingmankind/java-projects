@@ -1,0 +1,24 @@
+package java_projects;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class DateTime {
+
+	public static void main(String[] args) {
+		LocalDate ld = LocalDate.now();
+		LocalTime lt = LocalTime.now();
+		LocalDateTime ldt = LocalDateTime.now();
+		System.out.println("Local Date: "+ ld);
+		System.out.println("Local Time: "+ lt);
+		System.out.println("Local Date Time: "+ ldt);
+		
+		// formatting date and time
+		System.out.println("Before formatting : "+ ldt);
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+		String formattedDateTime = ldt.format(dtf);
+		System.out.println("After Formatting : "+ formattedDateTime);
+		
+	}
+}
