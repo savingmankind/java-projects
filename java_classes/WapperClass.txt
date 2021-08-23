@@ -26,3 +26,13 @@ we use "toString()" method to convert wrapper objects to strings.
 
 since we are working with objects, we can use certain methods to get info about the specific objects
 intValue(), byteValue(), shortValue() etc
+
+
+Autoboxing and unboxing
+-----------------------------------
+
+Automatic conversion of primitive types to the objects of their corresponding wrapper classes is called autoboxing.
+ex: conversion of int to Integer, long to Long
+
+Uboxing is reverse of auto boxing : converting an object of wrapper class to its primitive type
+ex: conversion of Integer to int, Character to char
