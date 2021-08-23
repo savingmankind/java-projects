@@ -1,0 +1,40 @@
+package java_projects;
+import java.util.ArrayList;
+
+public class ArrayListE {
+
+	public static void main(String[] args) {
+		// creating an arrayList
+		ArrayList<Integer> numbers = new ArrayList<Integer>();
+		numbers.add(1);
+		numbers.add(2);
+		numbers.add(12);
+		numbers.add(14);
+		numbers.add(15);
+		System.out.println(numbers);
+		
+		// assessing an item in arrayList
+		System.out.println(numbers.get(2));
+		
+		// removing an element in arrayList
+		numbers.remove(2);
+		System.out.println(numbers);
+		//numbers.removeAll(numbers);
+		//OR
+		//numbers.clear();
+		//System.out.println(numbers);
+		
+		// get the size of an arrayList
+		System.out.println(numbers.size());
+		
+		// Loop Through an arrayList
+		for(int i=0; i<numbers.size(); i++) {
+			System.out.println(numbers.get(i));
+		}
+		
+		// Loop through an arrayList with foreach
+		for(int y : numbers) {
+			System.out.println(y);
+		}
+	}
+}
